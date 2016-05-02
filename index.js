@@ -54,6 +54,8 @@ class BuildUsersFromCSV {
     if (!this.isValidUser(user)) { return false; }
     // Return the processed user
     // We might want to encode/sanitize any potential nastiness here too
+    // NOTE: I also realize I am doing double work for trimming as its also done in
+    // the isValid function, in the future this could be refactored to be cleaner
     return {
       name: user.name.trim(),
       age: user.age.trim(),
