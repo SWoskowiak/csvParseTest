@@ -26,3 +26,15 @@ The internal store will look like:
   { name: '  jake', age: '1000', location: 'CA' },
   { name: '  jim', age: '20', location: 'OR' } ]
 ```
+
+## Install
+
+```Javascript
+ git clone https://github.com/SWoskowiak/csvParseTest.git
+ npm install
+```
+### Executing
+
+```Javascript
+  node run
+```
