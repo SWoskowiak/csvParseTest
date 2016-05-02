@@ -21,6 +21,7 @@ describe('Class: Build Users From CSV', function () {
     BUFCSV = new BuildUsersFromCSV();
   });
 
+  // Test parseCSV run throughs
   describe('Method: parseCSV', function () {
     it('Rejects non-string input', () => {
       expect(BUFCSV.parseCSV(123)).to.be.an('error');
@@ -36,4 +37,6 @@ describe('Class: Build Users From CSV', function () {
       expect(BUFCSV.store).to.be.an('array').with.length(4);
     });
   });
+
+  // NOTE: This would be a good spot to test the individual functions we utilize in our BuildUsersFromCSV class
 });
