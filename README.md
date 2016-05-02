@@ -31,10 +31,19 @@ The internal store will look like:
 
 ```Javascript
  git clone https://github.com/SWoskowiak/csvParseTest.git
+ cd csvParseTest
  npm install
 ```
 ### Executing
 
 ```Javascript
   node run
+```
+
+There is sample data in run.js that can be modified, all results of parsing it are dumped to console
+
+### Run tests
+
+```Javascript
+npm test
 ```
